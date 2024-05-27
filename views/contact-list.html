@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact List</title>
+</head>
+<body>
+    <h1>Contact List</h1>
+    <div id="contact-list"></div>
+
+    <script>
+        function fetchContacts() {
+            fetch('/contacts')
+                .then(response => response.json())
+                .then(contacts => {
+                    const contactList = document.getElementById('contact-list');
+
+                    contactList.innerHTML = '';
+
+                    contacts.forEach(contact => {
+                        const contactDiv = document.createElement('div');
+                        contactDiv.innerHTML = `
+                            <h3>${contact.name}</h3>
+                            <p><strong>Email:</strong> ${contact.email}</p>
+                            <p><strong>Description:</strong> ${contact.description}</p>
+                            <hr>
+                        `;
+                        contactList.appendChild(contactDiv);
+                    });
+                })
+                .catch(error => {
+                    console.error('Error fetching contacts:', error);
+                });
+        }
+
+        window.onload = fetchContacts;
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>PC Cardinal - Elérhetőség</title>
+</head>
+<body>
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">
+                <img src="/resources/logo.jpeg" width="400" height="100" class="d-inline-block align-top" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">Rólunk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/services">Szolgáltatások</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Termékek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Kapcsolat</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+
+        <div class="centered-form container">
+            <form action="/contact" method="post">
+                <div class="form-group row">
+                    <label for="name" class="col-sm-3">Name:</label>
+                    <div class="col-sm-9">
+                        <input type="text" id="name" name="name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-sm-3">Email:</label>
+                    <div class="col-sm-9">
+                        <input type="email" id="email" name="email">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="description" class="col-sm-3">Description:</label>
+                    <div class="col-sm-9">
+                        <textarea id="description" name="description"></textarea>
+                    </div>
+                </div>
+                <input type="submit" value="Submit" class="btn btn-primary" id="sumbit-button">
+            </form>
+        </div>
+        
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-bottom">
+        <div class="container">
+            <span class="navbar-text ml-auto">Készítette: Víg Szabolcs, Strom Zsolt</span>
+        </div>
+    </nav>
+    
+    <script src="/js/script.js"></script>
+</body>
+</html>

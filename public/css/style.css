@@ -1,0 +1,139 @@
+/* CSS Styles */
+/* Sets the font family for HTML body */
+html, body {
+    font-family: Arial, sans-serif;
+    /* Sets the background color to a light shade */
+    background-color: #F8F4CF !important;
+    /* Sets the height of the body to fill the entire viewport */
+    height: 100vh;
+    /* Removes the default margin */
+    margin: 0;
+    /* Sets the layout direction to a column for the navbar and content */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar styling */
+.navbar {
+    /* Sets the width to 100% */
+    width: 100%; 
+}
+
+/* Centered form styling */
+.centered-form {
+    /* Centers content horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Allows the form to grow to fill available space */
+    flex-grow: 1; 
+}
+
+/* Form styling */
+form {
+    /* Sets the background color */
+    background: #F8F4CF;
+    /* Adds padding around the form elements */
+    padding: 20px;
+    /* Adds rounded corners to the form */
+    border-radius: 8px;
+    /* Adds a shadow effect */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for form labels, inputs, and textareas */
+form label, form input, form textarea {
+    /* Displays elements as block-level elements */
+    display: block;
+    /* Sets the width to 100% */
+    width: 100%;
+    /* Adds margin at the bottom of each element */
+    margin-bottom: 10px;
+}
+
+/* Navbar styling */
+.navbar {
+    /* Sets the z-index to ensure the navbar stays above other elements */
+    z-index: 1000;
+}
+
+/* Navbar background color */
+.navbar.bg-light {
+    /* Sets the background color to a dark shade */
+    background-color: #31181E !important;
+}
+
+/* Navbar link styling */
+.navbar .navbar-nav .nav-link {
+    /* Sets the color of navbar links */
+    color: #F8F4CF !important;
+}
+
+/* Navbar toggler icon styling */
+.navbar .navbar-toggler-icon {
+    /* Sets the background color of the toggler icon */
+    background-color: #F8F4CF !important;
+}
+
+/* Navbar toggler styling */
+.navbar .navbar-toggler {
+    /* Sets the border color of the toggler */
+    border-color: #F8F4CF !important;
+}
+
+/* Active navbar link styling */
+.navbar .nav-item.active .nav-link {
+    /* Sets the background color of active navbar links */
+    background-color: #F8F4CF !important;
+    /* Sets the color of active navbar links */
+    color: #000000 !important;
+}
+
+/* Submit button styling */
+#sumbit-button {
+    /* Sets the background color of the submit button */
+    background-color: #31181E;
+    /* Sets the text color of the submit button */
+    color: #F8F4CF;
+    /* Sets the border color of the submit button */
+    border-color: #31181E;
+}
+
+/* Row margin */
+.row {
+    /* Sets margin around rows */
+    margin: 100px;
+}
+
+/* Card styling */
+.card {
+    /* Ensures all cards have the same height */
+    height: 100%;
+}
+
+/* Card body styling */
+.card-body {
+    /* Adds padding around the card body */
+    padding: 20px;
+    /* Sets a fixed height for the card body */
+    height: 100%;
+    /* Sets the flex direction to column for the card body */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card title styling */
+.card-title {
+    /* Sets the font size of the card title */
+    font-size: 18px;
+    /* Adds margin at the bottom of the card title */
+    margin-bottom: 10px;
+}
+
+/* Card text styling */
+.card-text {
+    /* Sets the font size of the card text */
+    font-size: 14px;
+    /* Allows text to grow to fill available space */
+    flex-grow: 1;
+}
